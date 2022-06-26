@@ -25,7 +25,7 @@ function draw(){
   pg.translate(width/2, height/2);
   pg.textAlign(CENTER, CENTER);
   pg.fill(255);
-  pg.text("a", 0, 0);
+  pg.text("yay", 0, 0);
   pg.pop();
 
   image(pg, 0, 0);
@@ -40,7 +40,7 @@ function draw(){
     for (var x = 0; x < tilesX; x++) {
 
       // WARP
-      var wave = int( sin( frameCount * 0.1 + (x*y) )*30 );
+      var wave = int( sin( frameCount * 0.7 + (x*y) )* 30 );
 
       // SOURCE
       var sx = x*tileW;
